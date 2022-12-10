@@ -1,0 +1,31 @@
+:root {
+    --LimeGreen: #76B947;
+    --LightGreen: #B1D8B7;
+    --SeafoamGreen: #2F5233;
+    --Spearmint: #94C973;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    width: 100%;
+    height: 50px;
+    color: lime;
+    border-color: black;
+    
+    background-color: var(--Spearmint)
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    padding-left: 40px;
+    font-size: 20px;
+}
+
