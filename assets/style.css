@@ -1,8 +1,8 @@
 :root {
-    --LimeGreen: #76B947;
-    --LightGreen: #B1D8B7;
-    --SeafoamGreen: #2F5233;
-    --Spearmint: #94C973;
+    --LimeGreen: #778A35;
+    --LightGreen: #31352E;
+    --Backgrounds: #EBEBE8;
+    --Borders: #94C973;
 }
 
 *{
@@ -10,22 +10,125 @@
     padding: 0;
 }
 
-header,
-footer {
-    width: 100%;
-    height: 50px;
-    color: lime;
-    border-color: black;
+header {
+    width: auto;
+    height: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px 10px 10px 10px;
+    text-align: center;
+    color: #31352E;
+    background-color: var(--LimeGreen);
+    border-bottom: solid 3px var(--LimeGreen);
     
-    background-color: var(--Spearmint)
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+
+}
+
+footer {
+    padding: 10px 5px 5px 5px;
+    background-color: var(--LightGreen);
+    text-align: center;
+    border-top: solid 5px var(--LimeGreen);
+    color: var(--Backgrounds);
+    height: 30px;
+
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    background-color: #31352E;
+    color: var(--Backgrounds);
+    justify-content: space-around;
+}
+
+nav a {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 10px 30px;
+    color: var(--Backgrounds);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--Backgrounds);
+    justify-content: center;
+    align-items: center;
+    background-image: url();
+ 
 }
 
 h1 {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px var(--Spearmint);
+    font-size: 60px;
+}
+
+h3 {
+    background-color: #31352E;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    border-bottom: solid 3px #31352E;
+    color: var(--Backgrounds);
 }
 
 ul {
-    padding-left: 40px;
-    font-size: 20px;
+    padding-left: px;
+    
 }
+
+.cardholder {
+    display: flex;
+    flex: 1;
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+       
+}
+
+.card-sec {
+    border: solid 2px #31352E;
+    border-radius: 5px;
+    flex: 0 0 300px;
+    margin: 50px;
+    height: 200px;
+    background-image: url(http://wallpaperset.com/w/full/d/8/1/234684.jpg);
+}
+
+.card-sec > p {
+    text-align: center;
+    color: var(--LimeGreen);
+    padding: 10px 5px 30px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-me {
+    display: flex;
+    flex: auto;
+    color: var(--Backgrounds);
+    padding-top: 15px;
+    padding-bottom: 150px;
+    border: solid 20px var(--LimeGreen);
+    background-image: url(http://wallpaperset.com/w/full/d/8/1/234684.jpg);
+}
+
+.about-me > ul {
+    margin-left: 150px;
+
+}
+
+
 
