@@ -8,25 +8,26 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 header {
-    width: auto;
-    height: 60px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 5px 10px 10px 10px;
-    text-align: center;
-    color: #31352E;
-    background-color: var(--LimeGreen);
-    border-bottom: solid 3px var(--LimeGreen);
+    display: flex;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #778A35;
+    border-bottom: soli 2px var(--LimeGreen);
     
 }
 
 body {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start
-
+    background-image: url(http://wallpaperset.com/w/full/d/8/1/234684.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
 
 footer {
@@ -41,37 +42,38 @@ footer {
 
 nav {
     display: flex;
-    flex-wrap: wrap;
     padding: 2px;
-    background-color: #31352E;
-    color: var(--Backgrounds);
-    justify-content: space-around;
+    background-color: var(--LightGreen);
+    border-bottom: solid var(--LimeGreen) 2px;
+    justify-content: space-between;
+
 }
 
 nav a {
     display: flex;
     flex-wrap: wrap-reverse;
-    padding: 10px 30px;
-    color: var(--Backgrounds);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
 main {
     display: flex;
-    flex-wrap: wrap;
-    background-color: var(--Backgrounds);
+    flex: wrap;
+    
     justify-content: center;
     align-items: center;
-    background-image: url();
+   
  
 }
 
 h1 {
-    padding-top: 0px;
-    padding-bottom: 20px;
-    text-shadow: 2px 2px 2px var(--Spearmint);
+    padding-top: 20px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    
     font-size: 60px;
+    color: var(--LimeGreen)
 }
 
 h3 {
@@ -79,19 +81,20 @@ h3 {
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    border-bottom: solid 3px #31352E;
     color: var(--Backgrounds);
+    text-decoration: underline;
+    border-radius: 7px
 }
 
 ul {
-    padding-left: px;
+    padding-left: 20px;
+    padding-top: 10px;
     
 }
 
 .cardholder {
     display: flex;
     flex: 1;
-    padding: 50px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
@@ -100,13 +103,45 @@ ul {
 }
 
 .card-sec {
-    border: solid 2px #31352E;
-    border-radius: 5px;
+    border: solid 2px #778A35;
+    border-radius: 10px;
     flex: 0 0 300px;
-    margin: 50px;
+    margin: 40px;
     height: 200px;
+    width: 300px;
     background-image: url(http://wallpaperset.com/w/full/d/8/1/234684.jpg);
 }
+
+.card-sec:hover {
+    border:solid 2px lime;
+    cursor: pointer;
+}
+
+.card-sec-first-website {
+    border: solid 2px #778A35;
+    border-radius: 5px;
+    flex: 0 0 300px;
+    margin: 40px;
+    height: 200px;
+    width: 300px;
+    color: var(--Backgrounds);
+    border-radius: 10px;
+    background-image: url(http://wallpaperset.com/w/full/d/8/1/234684.jpg);
+}
+
+.card-sec-first-website:hover {
+    border: solid 2px lime;
+    cursor: pointer;
+    
+}
+
+.card-sec-first-website:hover > h3 {
+    color: lime;
+}
+
+
+
+
 
 .card-sec > p {
     text-align: center;
@@ -115,19 +150,8 @@ ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.about-me {
-    display: flex;
-    flex: auto;
-    color: var(--Backgrounds);
-    padding-top: 15px;
-    padding-bottom: 150px;
-    border: solid 20px var(--LimeGreen);
-    background-image: url(http://wallpaperset.com/w/full/d/8/1/234684.jpg);
-}
-
-.about-me > ul {
-    margin-left: 150px;
-
+.card-sec:hover > h3 {
+    color: lime;
 }
 
 
