@@ -8,7 +8,6 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 
 header {
@@ -17,7 +16,7 @@ header {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #778A35;
     border-bottom: soli 2px var(--LimeGreen);
-    
+    padding-top: 50px;
 }
 
 body {
@@ -45,13 +44,19 @@ nav {
     padding: 2px;
     background-color: var(--LightGreen);
     border-bottom: solid var(--LimeGreen) 2px;
-    justify-content: space-between;
-
+    justify-content: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
+
+
 
 nav a {
     display: flex;
-    flex-wrap: wrap-reverse;
+    
     padding: 10px 20px;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -61,7 +66,6 @@ nav a {
 main {
     display: flex;
     flex: wrap;
-    
     justify-content: center;
     align-items: center;
    
@@ -86,9 +90,11 @@ h3 {
     border-radius: 7px
 }
 
-ul {
+ul {                                                                                                                                                                
     padding-left: 20px;
-    padding-top: 10px;
+    padding-top: 10px; 
+    color: var(--LimeGreen);
+    text-decoration:underline;                                                                              
     
 }
 
@@ -140,9 +146,6 @@ ul {
 }
 
 
-
-
-
 .card-sec > p {
     text-align: center;
     color: var(--LimeGreen);
@@ -152,6 +155,42 @@ ul {
 
 .card-sec:hover > h3 {
     color: lime;
+}
+
+.about-me {
+    display:flex;
+    justify-content: top;
+    border: solid #778A35;
+    padding-bottom: 790px;
+    padding-top: 30px;
+    border-radius: 10px;
+    width: 200px;
+    height: 600px;
+}
+
+.abbout-me > p {
+    display: flex;
+
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding-bottom: 500px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+
+}
+
+h1:hover {
+    color: lime;
+    cursor:all-scroll;
+}
+
+nav a:hover {
+    color: var(--LimeGreen);
+    cursor:pointer;
 }
 
 
